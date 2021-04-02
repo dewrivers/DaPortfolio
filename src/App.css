@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
-   --primaryWite: #fff;
+   --primaryWite: #ffffff;
+   --primary-light-gray: #f4f4f4;
    --primary-orange: #f98b00;
-   --primary-dark: rgba(255, 255, 255, 0);
+   --primary-dark: rgb(52, 58, 64);
    --primary-red: #ef4035;
    --primary-hover-red: #f33501;
    --primary-blue: skyblue;
@@ -163,4 +164,58 @@ nav ul li {
    .profile-image{ 
       width: 10rem;
    }
+}
+
+/********************* SERVICES *************************/
+
+.services {
+   text-align: center;
+   padding-bottom: 2rem;
+   background: var(--primary-light-gray);
+}
+
+.services h1 {
+   color: var(--primary-dark);
+   text-transform: uppercase;
+}
+.services .circle {
+   position: relative;
+   margin: .375rem auto;
+   background: var(--primary-orange);
+   border-radius: 50%;
+   width: 3.125rem;
+   height: 3.125rem;
+}
+
+.services .icon {
+   font-size: 1.7rem;
+   color: var(--primaryWite);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.services .box {
+   height: 17rem;
+   border-bottom: .3125rem solid var(--primary-orange);
+   padding: .625rem;
+   margin-bottom: 1.875rem;
+   background: var(--primaryWite);
+}
+
+.services .box:hover{
+   background: var(--primary-orange);
+   border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon {
+   color: var(--primary-orange);
+}
+
+.services .box:hover .circle {
+   background: var(--primaryWite);
+}
+.services .box:hover p {
+   color: var(--primaryWite);
 }
