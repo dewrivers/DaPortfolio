@@ -44,7 +44,7 @@ nav ul li {
    margin-right: .75rem;
    margin-left: .75rem;
    color: var(--primaryWite)!important;
-   border: .1875rem solid var(--primary-dark);
+   border-top: .1875rem solid var(--primary-dark);
 }
 
 .navbar-brand {
@@ -59,12 +59,12 @@ nav ul li {
    }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-   border: .1875rem solid var(--primary-orange);
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+   border-top: .1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover { 
-   border: .1875rem solid var(--primary-orange);
+   border-top: .1875rem solid var(--primary-orange);
 }
 
 /********************* Header *************************/
@@ -368,7 +368,12 @@ nav ul li {
    transition: 0.3s ease-in-out;
    cursor: pointer;
 }
-/*------------ POPUBOX ------------------*/
+
+.popupbox-wrapper {
+   margin-top: 7rem;
+
+}
+/*------------ POPUpBOX ------------------*/
 
 .portfolio-image-popupbox {
    width: 45rem;
@@ -572,3 +577,25 @@ input.form-control, textarea.form-control{
       padding: 0 0.4rem;
    }
 }
+
+/************************ FOOTER COMPONENT *********************************/
+.footer {
+   background: var(--primary-black);
+   color: var(--primary-dark-gray);
+   padding: 3rem;
+ }
+ 
+ .footer a {
+   text-decoration: none;
+   color: var(--primary-dark-gray);
+ }
+ 
+ .footer a:hover {
+   text-decoration: none;
+   color: var(--primary-orange);
+   cursor:pointer;
+ }
+ 
+ .footer p {
+   margin-bottom: 0;
+ }
